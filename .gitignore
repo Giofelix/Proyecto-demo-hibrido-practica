@@ -14,6 +14,10 @@ node_modules/
 # Newman (reportes sueltos si se usan otros reporters localmente)
 /newman/
 
+# Reportes HTML de API (Newman/htmlextra) y UI (Playwright) movidos por CI,
+# generados por scripts/run-api-tests.js y por el Jenkinsfile (no se versionan)
+/reports/
+
 # Entornos locales
 .env
 .env.local

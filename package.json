@@ -29,6 +29,7 @@
     "allure-playwright": "^3.12.2",
     "newman": "^6.2.2",
     "newman-reporter-allure": "^3.12.2",
+    "newman-reporter-htmlextra": "^1.23.1",
     "npm-run-all2": "^9.0.3",
     "rimraf": "^6.1.3"
   }
