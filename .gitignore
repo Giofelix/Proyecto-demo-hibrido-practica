@@ -1,0 +1,19 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Allure (resultados y reporte generado, no se versionan)
+/allure-results/
+/allure-report/
+
+# Newman (reportes sueltos si se usan otros reporters localmente)
+/newman/
+
+# Entornos locales
+.env
+.env.local

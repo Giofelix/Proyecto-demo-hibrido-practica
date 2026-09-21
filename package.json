@@ -1,0 +1,35 @@
+{
+  "name": "proyecto-demo-hbrido-practica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "clean:allure": "rimraf allure-results allure-report",
+    "test:api": "node scripts/run-api-tests.js",
+    "test:ui": "playwright test",
+    "test:ui:headed": "playwright test --headed",
+    "test:all": "run-s -c clean:allure test:api test:ui report:generate",
+    "report:generate": "allure generate allure-results -o allure-report",
+    "report:open": "allure open allure-report",
+    "report": "run-s report:generate report:open",
+    "test": "run-s test:all",
+    "playwright:install": "playwright install --with-deps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2",
+    "allure": "^3.18.0",
+    "allure-playwright": "^3.12.2",
+    "newman": "^6.2.2",
+    "newman-reporter-allure": "^3.12.2",
+    "npm-run-all2": "^9.0.3",
+    "rimraf": "^6.1.3"
+  }
+}
